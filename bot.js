@@ -19,7 +19,7 @@ function doLike() {
     var nextTime = Math.random() * (14000 - 4000) + 4000;
     likeElement.click();
     setTimeout(function() {nextElement.click();}, 1000);
-    if (likeCount < 25) {
+    if (likeCount < 50) {
         setTimeout(doLike, nextTime);
     } else {
         console.log('Nice! Time for a break.');
